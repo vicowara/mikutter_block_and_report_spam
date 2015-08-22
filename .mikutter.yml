@@ -1,0 +1,10 @@
+---
+slug: :report_spam
+depends:
+  mikutter: 3.2.5
+  plugin:
+  - command
+version: '1.0'
+author: 
+name: mikutter_block_and_report_spam
+description: スパブロキメるプラグイン
