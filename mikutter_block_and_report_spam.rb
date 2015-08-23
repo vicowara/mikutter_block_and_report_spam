@@ -14,6 +14,6 @@ Plugin.create(:report_spam) do
           role: :timeline)do |opt|
     message = opt.messages.first
     screen_name = message.user[:idname]
-    spamblock(screen_name)
+    spamblock(screen_name) if ::Gtk::Dialog.confirm('本当にこのユーザをスパブロしますか？' + "\n\n@#{screen_name}")
   end
 end
